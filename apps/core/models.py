@@ -5,7 +5,7 @@ from django.contrib.auth import get_user_model
 
 
 class BaseModel(models.Model):
-    uuid = models.UUIDField(unique=True, default=uuid.uuid4)
+    uid = models.UUIDField(unique=True, default=uuid.uuid4)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
